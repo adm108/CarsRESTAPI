@@ -8,7 +8,9 @@ class CarSerializer(serializers.ModelSerializer):
     avg_rating = serializers.SerializerMethodField(read_only=True)
 
     def get_avg_rating(self, obj):
-        return round(obj.avg_rating, 1)
+        if obj.avg_rating != None:
+            return round(obj.avg_rating, 1)
+        return obj.avg_rating
 
     class Meta:
         model = Car

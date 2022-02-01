@@ -12,6 +12,7 @@ It's a simple cars REST API that allows to:
 - Django 4.0.1
 - Django Rest Framework 3.13.1
 - requests 2.27.1
+- python-decouple 3.5
 
 ## Installation:
 ##### 1. Clone repository:

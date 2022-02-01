@@ -10,7 +10,9 @@ class Car(models.Model):
 
     @property
     def avg_rating(self):
-        return round(self.ratings.aggregate(avg_rating = Avg('rate'))['avg_rating'], 1)
+        if self.ratings.aggregate(avg_rating = Avg('rate'))['avg_rating'] != None:
+            return round(self.ratings.aggregate(avg_rating = Avg('rate'))['avg_rating'], 1)
+        return self.ratings.aggregate(avg_rating = Avg('rate'))['avg_rating']
     
     class Meta:
         unique_together = ('make', 'model',)
