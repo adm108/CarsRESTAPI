@@ -96,4 +96,4 @@ rate_14.save()
 $ python manage.py runserver
 ```
 ##### 10. Now you can test my app! It is available on pythonanywhere site:
-http://adm108.pythonanywhere.com/
+http://adm92.pythonanywhere.com/
