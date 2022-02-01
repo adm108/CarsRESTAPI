@@ -19,31 +19,30 @@ It's a simple cars REST API that allows to:
 ```sh
 $ git clone https://github.com/adm108/CarsRESTAPI.git
 ```
-##### 2. Create virtual enviroment and activate it:
-```sh
-$ python -m venv venv (if you work on Windows system)
-```
-##### 3. Go to BooksRESTAPI:
+##### 2. Go to CarsRESTAPI folder, create virtual enviroment and activate it:
 ```sh
 $ cd CarsRESTAPI
+$ python -m venv venv (if you work on Windows system)
 ```
-##### 4. Install all packages from requirements.txt file:
+##### 3. Install all packages from requirements.txt file:
 ```sh
 $ pip install -r requirements.txt
 ```
-##### 5. Go to carsrestapi folder and use manage.py to enter following commands. Generate SQL commands:
+##### 5. Paste SECRET KEY in settings.py file, comment previous variable:
+![image info](pictures\secret_key.png)
+##### 4. Go to carsrestapi folder and use manage.py to enter following commands. Generate SQL commands:
 ```sh
 $ python manage.py makemigrations
 ```
-##### 6. Execute SQL commands:
+##### 5. Execute SQL commands:
 ```sh
 $ python manage.py migrate
 ```
-##### 7. Create superuser (enter email, username and password):
+##### 6. Create superuser (enter email, username and password):
 ```sh
 $ python manage.py createsuperuser
 ```
-##### 8. Add some example data via shell - go to shell via terminal, copy prepared data (available below) and paste it:
+##### 7. Add some example data via shell - go to shell via terminal, copy prepared data (available below) and paste it:
 ```sh
 $ python manage.py shell
 ```
@@ -62,20 +61,20 @@ car_3.save()
 car_4.save()
 car_5.save()
 
-rate_1 = Rating(car_id=1, rate=4)
-rate_2 = Rating(car_id=1, rate=4)
-rate_3 = Rating(car_id=1, rate=5)
-rate_4 = Rating(car_id=2, rate=5)
-rate_5 = Rating(car_id=2, rate=5)
-rate_6 = Rating(car_id=2, rate=5)
-rate_7 = Rating(car_id=2, rate=4)
-rate_8 = Rating(car_id=3, rate=1)
-rate_9 = Rating(car_id=3, rate=3)
-rate_10 = Rating(car_id=4, rate=5)
-rate_11 = Rating(car_id=4, rate=4)
-rate_12 = Rating(car_id=4, rate=5)
-rate_13 = Rating(car_id=4, rate=5)
-rate_14 = Rating(car_id=4, rate=5)
+rate_1 = Rating(car_id=car_1, rate=4)
+rate_2 = Rating(car_id=car_1, rate=4)
+rate_3 = Rating(car_id=car_1, rate=5)
+rate_4 = Rating(car_id=car_2, rate=5)
+rate_5 = Rating(car_id=car_2, rate=5)
+rate_6 = Rating(car_id=car_2, rate=5)
+rate_7 = Rating(car_id=car_1, rate=4)
+rate_8 = Rating(car_id=car_3, rate=1)
+rate_9 = Rating(car_id=car_3, rate=3)
+rate_10 = Rating(car_id=car_4, rate=5)
+rate_11 = Rating(car_id=car_4, rate=4)
+rate_12 = Rating(car_id=car_4, rate=5)
+rate_13 = Rating(car_id=car_4, rate=5)
+rate_14 = Rating(car_id=car_4, rate=5)
 
 rate_1.save()
 rate_2.save()
@@ -92,9 +91,9 @@ rate_12.save()
 rate_13.save()
 rate_14.save()
 ```
-##### 9. Run your local server:
+##### 8. Run your local server:
 ```sh
 $ python manage.py runserver
 ```
-##### 10. Now you can test my app! It is available on pythonanywhere site:
+##### 9. Now you can test my app locally! It is available on pythonanywhere site also:
 http://adm92.pythonanywhere.com/
