@@ -1,4 +1,4 @@
-Cars REST API
+# Cars REST API
 
 ## Description:
 It's a simple cars REST API that allows to:
