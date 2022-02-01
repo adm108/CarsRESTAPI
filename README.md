@@ -29,7 +29,7 @@ $ python -m venv venv (if you work on Windows system)
 $ pip install -r requirements.txt
 ```
 ##### 5. Paste SECRET KEY in settings.py file, comment previous variable:
-![alt text](pictures/secret_key.png)
+![alt text](pictures/secretkey.png)
 ##### 4. Go to carsrestapi folder and use manage.py to enter following commands. Generate SQL commands:
 ```sh
 $ python manage.py makemigrations
