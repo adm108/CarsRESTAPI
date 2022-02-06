@@ -95,5 +95,9 @@ rate_14.save()
 ```sh
 $ python manage.py runserver
 ```
-##### 9. Now you can test my app locally! It is available on pythonanywhere site also:
+##### 9. You can trun on basic tests of my cars API (GET cars and popular cars, POST car and rate). Remember to collect data from point no. 7 to your database before running tests:
+```sh
+$ python manage.py test
+```
+##### 10. Now you can test my app locally! It is available on pythonanywhere site also:
 http://adm92.pythonanywhere.com/
